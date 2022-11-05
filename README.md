@@ -1,6 +1,6 @@
 # <cat-holic-web>
 
-* 이름: <cat-holic-web>
+* 이름: cat-holic-web
 * 배포: ###(링크 추가 필요)
 ---
 ### 프로젝트 소개
