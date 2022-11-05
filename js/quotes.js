@@ -34,3 +34,11 @@ const quotes = [
   { quote: "외로운 심정은 털과 털, 피부와 피부, 또는 털과 피부가 맞닿음으로써 위로된다.", author: "폴 갈리코" },
   { quote: "고양이는 한 사람을 자기가 감당하기 힘들 정도로 사랑한다. 하지만 그들은 너무나 지혜롭기 때문에 그것을 밖으로 완전히 드러내지 않는다.", author: "메리 E. 윌킨스 프리맨" },
 ];
+
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
+
+const randomQuotes = quotes[Math.floor(Math.random() * quotes.length)];
+
+quote.innerText = randomQuotes.quote;
+author.innerText = randomQuotes.author;
