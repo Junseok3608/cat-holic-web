@@ -16,6 +16,13 @@
     <nav class="navbar navbar-expand">
       <div id="weather"><span></span></div>
     </nav>
+    <div class="col card side-bar">
+      <i id="side-bar_arrow" class="fas fa-arrows-alt-h"></i>
+      <ul id="todo-list" class="list-group"></ul>
+      <form id="todo-form" class="form-control">
+        <input type="text" placeholder="새로운 TODO를 입력하세요." required />
+      </form>
+    </div>
 
     <div class="row align-items-center fixed-bottom">
       <div id="main-container" class="col pt-2">
@@ -30,15 +37,9 @@
           <p></p>
           <span class="author"></span>
         </div>
-        <div class="text-center">음악 재생</div>
       </div>
     </div>
-    <div class="col card fixed-form">
-      <form id="todo-form" class="form-control">
-        <input type="text" placeholder="새로운 TODO를 입력하세요." required />
-      </form>
-      <ul id="todo-list" class="list-group"></ul>
-    </div>
+
     <!-- javascript files -->
     <script src="js/background.js"></script>
     <script src="js/greeting.js"></script>

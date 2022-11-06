@@ -5,6 +5,11 @@
 * {
   font-family: "poor";
 }
+ul {
+  list-style: none;
+  margin: 5px 15px;
+}
+
 .font-600 {
   font-weight: 600;
   text-align: center;
@@ -41,27 +46,6 @@ body {
   box-sizing: border-box;
 }
 
-#main-container {
-  box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 180px;
-  display: flex;
-  flex-direction: column;
-}
-
-.fixed-form {
-  position: fixed;
-  width: 100px;
-  height: 300px;
-  box-sizing: border-box;
-  border: 1px solid black;
-  right: 0;
-}
-#greeting {
-}
-#clock {
-}
-
 #weather {
   font-weight: 600;
   font-size: 20px;
@@ -80,11 +64,71 @@ body {
   margin-bottom: 10px;
 }
 
+#main-container {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+#login-form {
+  text-align: center;
+}
+.side-bar {
+  position: fixed;
+  width: 30px;
+  height: 65%;
+  z-index: 99999;
+  box-sizing: border-box;
+  right: 0;
+  opacity: 0.8;
+}
+.side-bar * {
+  transform: translateX(100px);
+}
+#side-bar_arrow {
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 45%;
+  right: 120px;
+  padding: 5px;
+  border-radius: 15%;
+}
+.side-bar:hover {
+  width: 250px;
+  transition: all 0.2s;
+}
+.side-bar:hover * {
+  transform: translateX(0px);
+  transition-delay: 0.5s;
+  transition: all 0.5s;
+}
+.side-bar:hover #side-bar_arrow {
+  opacity: 0.5;
+  transform: translateX(-125px);
+
+  transition: all 0.3s;
+}
+#todo-list {
+  display: flex;
+  height: 100%;
+}
 #todo-form {
   box-sizing: border-box;
   border: 1px solid black;
+  width: 100%;
 }
-
-#login-form {
-  text-align: center;
+#todo-form input {
+  width: 100%;
+  border: none;
+}
+#todo-form input:focus {
+  outline: none;
+}
+button {
+  margin-left: 5px;
+  font-weight: 600;
+  border: none;
+  background: none;
 }
