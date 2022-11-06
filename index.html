@@ -10,33 +10,35 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- footawesome -->
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
-
     <title>Cat-Holic-Web</title>
   </head>
-  <body class="row">
-    <header class="col-12">
+  <body class="container">
+    <nav class="navbar navbar-expand">
       <div id="weather"><span></span></div>
-    </header>
-    <div class="col-2"></div>
-    <div id="main-container" class="col-8">
-      <div id="quote">
-        <p></p>
-        <span></span>
+    </nav>
+
+    <div class="row align-items-center fixed-bottom">
+      <div id="main-container" class="col pt-2">
+        <h2 id="clock" class="font-600">--:--:--</h2>
+        <form id="login-form" class="hidden">
+          <input type="text" maxlength="15" placeholder="이름을 입력하세요." />
+          <input type="submit" value="로그인" />
+        </form>
+        <h1 id="greeting" class="hidden font-600"></h1>
+
+        <div id="quote" class="font-400">
+          <p></p>
+          <span class="author"></span>
+        </div>
+        <div class="text-center">음악 재생</div>
       </div>
-      <form id="login-form" class="hidden">
-        <input type="text" maxlength="15" placeholder="이름을 입력하세요." />
-        <input type="submit" value="로그인" />
-      </form>
-      <h1 id="greeting" class="hidden"></h1>
-      <h2 id="clock">--:--:--</h2>
     </div>
-    <div class="col-2">
-      <form id="todo-form" class="">
+    <div class="col card fixed-form">
+      <form id="todo-form" class="form-control">
         <input type="text" placeholder="새로운 TODO를 입력하세요." required />
       </form>
-      <ul id="todo-list"></ul>
+      <ul id="todo-list" class="list-group"></ul>
     </div>
-
     <!-- javascript files -->
     <script src="js/background.js"></script>
     <script src="js/greeting.js"></script>

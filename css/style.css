@@ -1,3 +1,25 @@
+@font-face {
+  font-family: "poor";
+  src: url("../fontawesome/webfonts/PoorStory-Regular.ttf") format("truetype");
+}
+* {
+  font-family: "poor";
+}
+.font-600 {
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 32px;
+}
+.font-400 {
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0.3px 0.3px rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 16px;
+}
+
 .hidden {
   display: none;
 }
@@ -10,7 +32,7 @@ img {
   right: 0px;
   bottom: 0px;
   z-index: -1;
-  opacity: 60%;
+  opacity: 80%;
 }
 body {
   height: 100vh;
@@ -21,21 +43,48 @@ body {
 
 #main-container {
   box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fixed-form {
+  position: fixed;
+  width: 100px;
+  height: 300px;
+  box-sizing: border-box;
   border: 1px solid black;
+  right: 0;
 }
 #greeting {
 }
-
-#quote {
-}
-#quote span {
-}
 #clock {
 }
+
 #weather {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0.4px 0.4px black;
+}
+#quote {
+  padding: 0px 40px;
+}
+
+.author {
+  position: absolute;
+  right: 15%;
+  bottom: 5%;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 #todo-form {
   box-sizing: border-box;
   border: 1px solid black;
+}
+
+#login-form {
+  text-align: center;
 }
