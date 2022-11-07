@@ -1,7 +1,7 @@
 # <cat-holic-web>
 
 * 이름: cat-holic-web
-* 배포: ###(링크 추가 필요)
+* 배포: https://junseok3608.github.io/cat-holic-web/
 ---
 ### 프로젝트 소개
 > 요약: momentum 클론 코딩의 cat-holic ver.
